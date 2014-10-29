@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>SASS Cheatsheet</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>SASS Cheatsheet</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<h1>SASS Cheatsheet</h1>
+    <h1 >SASS Cheatsheet</h1>
+    <h2 >Syntax</h2>
+    <h3 >Declarations</h3>
+    <code>
+        <span class="property">border:</span> <span class="number">1px</span> solid tomato <br>
+        <span class="property">:border</span> <span class="number">1px</span> solid tomato
+    </code>
+
+    <h3 >Imports</h3>
+    <code>
+        <span class="at_rule">@import components/code</span>
+    </code>
+
+    <h3 >Mixins</h3>
+    <h4 >Defining Mixins</h4>
+    <code>
+        <span class="keyword">=bounce</span> ($param1, $param2) <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;Your mixin here&gt;</span>
+    </code>
+
+    <h4 >Calling Mixins</h4>
+    <code>
+        <span class="keyword">+bounce</span> (yolo, swag)
+    </code>
+
+    <h3 >Defining Maps and Lists</h3>
+    <code>
+        <span class="variable">$var-map</span>: ( value: <span class="number">1</span>, price: <span class="number">2</span> ) <br>
+        <span class="variable">$var-list</span>: yolo, zolo, molo, tolo
+    </code>
+    <p><strong>Invalid:</strong></p>
+    <code>
+        <span class="variable">$var-map</span>: (<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;guess: <span class="number">23</span>,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;answer: <span class="number">42</span><br>
+        )<br>
+    </code>
+    <p>Note: Same goes for lists<br>
+    This is awful but:</p>
+    <blockquote>
+        <p><i>Planned - /issues/216 - 13 Aug 14</i></p>
+    </blockquote>
+
+    <h3 >Shorthand properties #UNDOCUMENTED</h3>
+    <code>
+        font: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;family: <span class="string">"Comic Sans"</span>, Arial <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;size: <span class="number">2em</span>
+    </code>
+
+    <h3 >Variable defaults</h3>
+    <code>
+        <span class="variable">$answer-to-question</span> || No!
+    </code>
 </body>
 </html>
