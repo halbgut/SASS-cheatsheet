@@ -1,0 +1,3 @@
+# SASS syntax
+This is a cheatsheet for the SASS syntax.
+[http://sass-lang.com/documentation/file.INDENTED_SYNTAX.html](sass-lang.com) seems have made the decision to call the not so popular Sass syntax, Sass. I struggle to understand why they didn't call it sass or SASS. As a beginner I found this super confusing. So i decided do go for SASS, because they the the popular syntax SCSS is written in all caps too.
