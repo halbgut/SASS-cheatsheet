@@ -1,40 +1,38 @@
 /* line 1, ../sass/components/_code.sass */
 code {
-  padding: 1em;
-  margin: 0.5em;
+  padding: 0 1em;
+  margin: 0;
   display: block;
   font-size: 1.2em;
-  background-color: #002b36;
-  color: #fdf6e3;
 }
 
-/* line 9, ../sass/components/_code.sass */
+/* line 7, ../sass/components/_code.sass */
 .keyword,
 .property {
   color: #2aa198;
 }
 
-/* line 13, ../sass/components/_code.sass */
+/* line 11, ../sass/components/_code.sass */
 .variable {
   color: #cb4b16;
 }
 
-/* line 16, ../sass/components/_code.sass */
+/* line 14, ../sass/components/_code.sass */
 .number {
   color: #6c71c4;
 }
 
-/* line 19, ../sass/components/_code.sass */
+/* line 17, ../sass/components/_code.sass */
 .string {
   color: #b58900;
 }
 
-/* line 22, ../sass/components/_code.sass */
+/* line 20, ../sass/components/_code.sass */
 .tag {
   color: #657b83;
 }
 
-/* line 25, ../sass/components/_code.sass */
+/* line 23, ../sass/components/_code.sass */
 .at_rule {
   color: #268bd2;
 }
@@ -66,34 +64,43 @@ body {
   column-fill: auto;
   padding: 3em;
   margin: 0;
-  color: black;
-  background-color: #fff;
+  color: #fdf6e3;
   height: 100vh;
+  font-size: 0.8em;
+  background-color: #073642;
 }
 
-/* line 26, ../sass/styles.sass */
+/* line 27, ../sass/styles.sass */
 h1, h2, h3, h4 {
   margin: 1em 0 0.6em;
 }
 
-/* line 29, ../sass/styles.sass */
+/* line 30, ../sass/styles.sass */
 h3, h4 {
   font-weight: 300;
+  margin-top: 0.8em;
 }
 
-/* line 32, ../sass/styles.sass */
-h2 {
+/* line 34, ../sass/styles.sass */
+h3 {
   font-weight: 400;
 }
 
-/* line 35, ../sass/styles.sass */
+/* line 37, ../sass/styles.sass */
+h2 {
+  font-weight: 600;
+  font-size: 2em;
+  margin-top: 0.3em;
+}
+
+/* line 42, ../sass/styles.sass */
 h1 {
   font-weight: 800;
   font-size: 3em;
-  margin-top: 0;
+  margin: 0 0 0.1em;
 }
 
-/* line 40, ../sass/styles.sass */
+/* line 47, ../sass/styles.sass */
 .note {
   font-size: 0.8em;
 }
