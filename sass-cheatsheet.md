@@ -31,9 +31,6 @@ This is awful but:
 		family: "Comic Sans", Arial
 		size: 2em
 
-### Variable defaults
-	$answer-to-question || No!
-
 ## Mixins (SASS & SCSS)
 ### List (all work with maps too)
 	length($var-list)
