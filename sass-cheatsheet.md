@@ -39,15 +39,17 @@ This is awful but:
 	length($var-list)
 	nth($var-list, 3)
 
-	join($var-list, $another-list)
+	$var-map: join($var-list, $another-list)
 Turns maps to a two dimentional list.
 
 	index($var-list, molo)
+	$var-map: append($var-list, kolo)
+	$zipped-list: zip($list1, $list2)
 
 ### Maps
-	map-get($var-map, killaz)
-	map-merge($var-map, (AAaaa: Oooo))
-	map-remove($var-map, fresh)
+	$var-map: map-get($var-map, killaz)
+	$var-map: map-merge($var-map, (AAaaa: Oooo))
+	$var-map: map-remove($var-map, fresh)
 
 	map-keys($var-map)
 Returns a list of keys
@@ -59,4 +61,35 @@ Returns a list of values
 
 ### Debugging
 	inspect()
+
+### Strings
+	quote($string)
+	unquote($string)
+	str-length($string)
+	str-index($string)
+	str-slice($string, 0, 4)
+	str-slice($string, 4)
+	to-upper-case($string)
+	to-lower-case($string)
+
+### Meta Stuff
+	feature-exists($feature)
+This is only for plugins
+
+	[[global-]variable|function|mixin]-exists($thing)
+	type-of($var-list)
+	unit(1rem)
+	unitless(3)
+
+	comparable(1px, 1px)
+Checks if two values have the same unit
+
+	call($function-name, $arg1, $arg2)
+This opens up a whole (new) world
+
+	unique-id()
+Returns something like "uanlk2zlx"
+
+### Colors, Numbers
+I'm bad with colors and numbers soo I'm leaving this out.
 
