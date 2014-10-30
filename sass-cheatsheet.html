@@ -55,5 +55,72 @@
             &nbsp;&nbsp;&nbsp;&nbsp;size: <span class="number">2em</span>
         </code>
     </section>
+    <section>
+        <h2>Mixins (SASS & SCSS)</h2>
+        <section>
+            <h3>List (all work with maps too)</h3>
+            <code><span class="keyword">length</span>(<span class="variable">$var-list</span>)</code>
+            <code><span class="keyword">nth</span>(<span class="variable">$var-list</span>, <span class="number">3</span>)</code>
+
+            <code><span class="variable">$var-map</span>: <span class="keyword">join</span>(<span class="variable">$var-list</span>, <span class="variable">$another-list</span>)</code>
+            <p>Turns maps to a two dimentional list.</p>
+
+            <code><span class="keyword">index</span>(<span class="variable">$var-list</span>, molo)</code>
+            <code><span class="variable">$var-map</span>: <span class="keyword">append</span>(<span class="variable">$var-list</span>, kolo)</code>
+            <code><span class="variable">$zipped-list</span>: <span class="keyword">zip</span>(<span class="variable">$list1</span>, <span class="variable">$list2</span>)</code>
+        </section>
+        <section>
+            <h3>Maps</h3>
+            <code><span class="variable">$var-map</span>: <span class="keyword">map-get</span>(<span class="variable">$var-map</span>, killaz)</code>
+            <code><span class="variable">$var-map</span>: <span class="keyword">map-merge</span>(<span class="variable">$var-map</span>, (AAaaa: Oooo))</code>
+            <code><span class="variable">$var-map</span>: <span class="keyword">map-remove</span>(<span class="variable">$var-map</span>, fresh)</code>
+
+            <code><span class="keyword">map-keys</span>(<span class="variable">$var-map</span>)</code>
+            <p>Returns a list of keys</p>
+
+            <code><span class="keyword">map-values</span>(<span class="variable">$var-map</span>)</code>
+            <p>Returns a list of values</p>
+
+            <code><span class="keyword">map-has-key</span>(<span class="variable">$var-map</span>, hashtag)</code>
+        </section>
+        <section>
+            <h3>Debugging</h3>
+            <code><span class="keyword">inspect</span>()</code>
+        </section>
+        <section>
+            <h3>Strings</h3>
+            <code><span class="keyword">quote</span>(<span class="variable">$string</span>)</code>
+            <code><span class="keyword">unquote</span>(<span class="variable">$string</span>)</code>
+            <code><span class="keyword">str-length</span>(<span class="variable">$string</span>)</code>
+            <code><span class="keyword">str-index</span>(<span class="variable">$string</span>)</code>
+            <code><span class="keyword">str-slice</span>(<span class="variable">$string</span>, <span class="number">0</span>, <span class="number">4</span>)</code>
+            <code><span class="keyword">str-slice</span>(<span class="variable">$string</span>, <span class="number">4</span>)</code>
+            <code><span class="keyword">to-upper-case</span>(<span class="variable">$string</span>)</code>
+            <code><span class="keyword">to-lower-case</span>(<span class="variable">$string</span>)</code>
+        </section>
+        <section>
+            <h3>Meta Stuff</h3>
+            <code><span class="keyword">feature-exists</span>(<span class="variable">$feature</span>)</code>
+            <p>This is only for plugins</p>
+
+            <code><span class="keyword">[[global-]variable|function|mixin]-exists</span>(<span class="variable">$thing</span>)</code>
+            <code><span class="keyword">type-of</span>(<span class="variable">$var-list</span>)</code>
+            <code><span class="keyword">unit</span>(<span class="number">1rem</span>)</code>
+            <code><span class="keyword">unitless</span>(<span class="number">3</span>)</code>
+
+            <code><span class="keyword">comparable</span>(<span class="number">1px</span>, <span class="number">1px</span>)</code>
+            <p>Checks if two values have the same unit</p>
+
+            <code><span class="keyword">call</span>(<span class="keyword">$function-name</span>, <span class="keyword">$arg1</span>, <span class="keyword">$arg2</span>)</code>
+            <p>This opens up a whole (new) world</p>
+
+            <code><span class="keyword">unique-id</span>()</code>
+            <p>Returns something like "uanlk2zlx"</p>
+        </section>
+        <section>
+            <h3>Colors, Numbers</h3>
+            <p>I'm bad with colors and numbers soo I'm leaving this out.</p>
+        </section>
+    </section>
 </body>
 </html>
