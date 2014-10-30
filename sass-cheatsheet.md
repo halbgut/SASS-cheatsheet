@@ -1,8 +1,7 @@
 # SASS Cheatsheet
-##Syntax
+## Syntax
 ### Declarations
 	border: 1px solid tomato
-	:border 1px solid tomato
 
 ### Imports
 	@import components/code
@@ -16,7 +15,7 @@
 	+bounce (yolo, swag)
 
 ### Defining Maps and Lists
-	$var-map: ( value: 1, price: 2 )
+	$var-map: ( fresh: killazz, hashtag: mofo )
 	$var-list: yolo, zolo, molo, tolo
 **Invalid:**
 	$var-map: (
@@ -25,7 +24,7 @@
 	)
 Note: Same goes for lists
 This is awful but:
-> Planned - /issues/216 - 13 Aug 14
+*Planned - /issues/216 - 13 Aug 14*
 
 ### Shorthand properties #UNDOCUMENTED
 	font:
@@ -34,3 +33,30 @@ This is awful but:
 
 ### Variable defaults
 	$answer-to-question || No!
+
+## Mixins (SASS & SCSS)
+### List (all work with maps too)
+	length($var-list)
+	nth($var-list, 3)
+
+	join($var-list, $another-list)
+Turns maps to a two dimentional list.
+
+	index($var-list, molo)
+
+### Maps
+	map-get($var-map, killaz)
+	map-merge($var-map, (AAaaa: Oooo))
+	map-remove($var-map, fresh)
+
+	map-keys($var-map)
+Returns a list of keys
+
+	map-values($var-map)
+Returns a list of values
+
+	map-has-key($var-map, hashtag)
+
+### Debugging
+	inspect()
+
