@@ -9,7 +9,7 @@ code {
 /* line 7, ../sass/components/_code.sass */
 .keyword,
 .property {
-  color: #2aa198;
+  color: #93a1a1;
 }
 
 /* line 11, ../sass/components/_code.sass */
@@ -29,7 +29,7 @@ code {
 
 /* line 20, ../sass/components/_code.sass */
 .tag {
-  color: #657b83;
+  color: #002b36;
 }
 
 /* line 23, ../sass/components/_code.sass */
