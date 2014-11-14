@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Sass-cheatsheet : A cheatsheet for the SASS syntax aka. the indeted syntax">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Sass-cheatsheet</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Kriegslustig/SASS-cheatsheet">View on GitHub</a>
+
+          <h1 id="project_title">Sass-cheatsheet</h1>
+          <h2 id="project_tagline">A cheatsheet for the SASS syntax aka. the indeted syntax</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Kriegslustig/SASS-cheatsheet/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Kriegslustig/SASS-cheatsheet/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="sass-cheatsheet" class="anchor" href="#sass-cheatsheet" aria-hidden="true"><span class="octicon octicon-link"></span></a>SASS Cheatsheet</h1>
+
+<h2>
+<a id="syntax" class="anchor" href="#syntax" aria-hidden="true"><span class="octicon octicon-link"></span></a>Syntax</h2>
+
+<h3>
+<a id="declarations" class="anchor" href="#declarations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Declarations</h3>
+
+<pre><code>border: 1px solid tomato
+</code></pre>
+
+<h3>
+<a id="imports" class="anchor" href="#imports" aria-hidden="true"><span class="octicon octicon-link"></span></a>Imports</h3>
+
+<pre><code>@import components/code
+</code></pre>
+
+<h3>
+<a id="mixins" class="anchor" href="#mixins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mixins</h3>
+
+<h4>
+<a id="defining-mixins" class="anchor" href="#defining-mixins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Defining Mixins</h4>
+
+<pre><code>=bounce ($param1, $param2)
+    &lt;Your mixin here&gt;
+</code></pre>
+
+<h4>
+<a id="calling-mixins" class="anchor" href="#calling-mixins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calling Mixins</h4>
+
+<pre><code>+bounce (yolo, swag)
+</code></pre>
+
+<h3>
+<a id="defining-maps-and-lists" class="anchor" href="#defining-maps-and-lists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Defining Maps and Lists</h3>
+
+<pre><code>$var-map: ( fresh: killazz, hashtag: mofo )
+$var-list: yolo, zolo, molo, tolo
+</code></pre>
+
+<p><strong>Invalid:</strong>
+    $var-map: (
+        guess: 23,
+        answer: 42
+    )
+Note: Same goes for lists
+This is awful but:
+<em>Planned - /issues/216 - 13 Aug 14</em></p>
+
+<h3>
+<a id="shorthand-properties-undocumented" class="anchor" href="#shorthand-properties-undocumented" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shorthand properties #UNDOCUMENTED</h3>
+
+<pre><code>font:
+    family: "Comic Sans", Arial
+    size: 2em
+</code></pre>
+
+<h2>
+<a id="mixins-sass--scss" class="anchor" href="#mixins-sass--scss" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mixins (SASS &amp; SCSS)</h2>
+
+<h3>
+<a id="list-all-work-with-maps-too" class="anchor" href="#list-all-work-with-maps-too" aria-hidden="true"><span class="octicon octicon-link"></span></a>List (all work with maps too)</h3>
+
+<pre><code>length($var-list)
+nth($var-list, 3)
+
+$var-map: join($var-list, $another-list)
+</code></pre>
+
+<p>Turns maps to a two dimentional list.</p>
+
+<pre><code>index($var-list, molo)
+$var-map: append($var-list, kolo)
+$zipped-list: zip($list1, $list2)
+</code></pre>
+
+<h3>
+<a id="maps" class="anchor" href="#maps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maps</h3>
+
+<pre><code>$var-map: map-get($var-map, killaz)
+$var-map: map-merge($var-map, (AAaaa: Oooo))
+$var-map: map-remove($var-map, fresh)
+
+map-keys($var-map)
+</code></pre>
+
+<p>Returns a list of keys</p>
+
+<pre><code>map-values($var-map)
+</code></pre>
+
+<p>Returns a list of values</p>
+
+<pre><code>map-has-key($var-map, hashtag)
+</code></pre>
+
+<h3>
+<a id="debugging" class="anchor" href="#debugging" aria-hidden="true"><span class="octicon octicon-link"></span></a>Debugging</h3>
+
+<pre><code>inspect()
+</code></pre>
+
+<h3>
+<a id="strings" class="anchor" href="#strings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Strings</h3>
+
+<pre><code>quote($string)
+unquote($string)
+str-length($string)
+str-index($string)
+str-slice($string, 0, 4)
+str-slice($string, 4)
+to-upper-case($string)
+to-lower-case($string)
+</code></pre>
+
+<h3>
+<a id="meta-stuff" class="anchor" href="#meta-stuff" aria-hidden="true"><span class="octicon octicon-link"></span></a>Meta Stuff</h3>
+
+<pre><code>feature-exists($feature)
+</code></pre>
+
+<p>This is only for plugins</p>
+
+<pre><code>[[global-]variable|function|mixin]-exists($thing)
+type-of($var-list)
+unit(1rem)
+unitless(3)
+
+comparable(1px, 1px)
+</code></pre>
+
+<p>Checks if two values have the same unit</p>
+
+<pre><code>call($function-name, $arg1, $arg2)
+</code></pre>
+
+<p>This opens up a whole (new) world</p>
+
+<pre><code>unique-id()
+</code></pre>
+
+<p>Returns something like "uanlk2zlx"</p>
+
+<h3>
+<a id="colors-numbers" class="anchor" href="#colors-numbers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Colors, Numbers</h3>
+
+<p>I'm bad with colors and numbers soo I'm leaving this out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Sass-cheatsheet maintained by <a href="https://github.com/Kriegslustig">Kriegslustig</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
