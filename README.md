@@ -5,3 +5,5 @@ It is very biased and it only includes the syntax i find most readable. For some
 It seems that there is some undocumented stuff.
 
 [http://sass-lang.com/documentation/file.INDENTED_SYNTAX.html](sass-lang.com) seems have made the decision to call the not so popular Sass syntax, Sass. I struggle to understand why they didn't call it sass or SASS. As a beginner I found this super confusing. So i decided do go for SASS, because they the the popular syntax SCSS is written in all caps too.
+
+To compile the md I use [chjj/marked](https://github.com/chjj/marked) and to hightlight the sass I use the sylus highlighting of [highlight.js](https://highlightjs.org)
