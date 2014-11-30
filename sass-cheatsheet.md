@@ -21,12 +21,12 @@
 ```
 ### Defining Maps and Lists
 ```stylus
-	$var-map: ( fresh: killazz, hashtag: mofo )
-	$var-list: yolo, zolo, molo, tolo
+	$var_map: ( fresh: killazz, hashtag: mofo )
+	$var_list: yolo, zolo, molo, tolo
 ```
 **Invalid:**
 ```stylus
-	$var-map: (
+	$var_map: (
 		guess: 23,
 		answer: 42
 	)
@@ -45,35 +45,35 @@ This is awful but:
 ## Mixins (SASS & SCSS)
 ### List (all work with maps too)
 ```stylus
-	length($var-list)
-	nth($var-list, 3)
+	length($var_list)
+	nth($var_list, 3)
 ```
 
 ```stylus
-	$var-map: join($var-list, $another-list)
+	$var_map: join($var_list, $another_list)
 ```
 Turns maps to a two dimentional list.
 ```stylus
-	index($var-list, molo)
-	$var-map: append($var-list, kolo)
-	$zipped-list: zip($list1, $list2)
+	index($var_list, molo)
+	$var_map: append($var_list, kolo)
+	$zipped_list: zip($list1, $list2)
 ```
 ### Maps
 ```stylus
-	$var-map: map-get($var-map, killaz)
-	$var-map: map-merge($var-map, (AAaaa: Oooo))
-	$var-map: map-remove($var-map, fresh)
+	$var_map: map-get($var_map, killaz)
+	$var_map: map-merge($var_map, (AAaaa: Oooo))
+	$var_map: map-remove($var_map, fresh)
 ```
 ```stylus
-	map-keys($var-map)
+	map-keys($var_map)
 ```
 Returns a list of keys
 ```stylus
-	map-values($var-map)
+	map-values($var_map)
 ```
 Returns a list of values
 ```stylus
-	map-has-key($var-map, hashtag)
+	map-has-key($var_map, hashtag)
 ```
 ### Debugging
 ```stylus
@@ -99,7 +99,7 @@ Returns a list of values
 This is only for plugins
 ```stylus
 	[[global-]variable|function|mixin]-exists($thing)
-	type-of($var-list)
+	type-of($var_list)
 	unit(1rem)
 	unitless(3)
 ```
@@ -108,7 +108,7 @@ This is only for plugins
 ```
 Checks if two values have the same unit
 ```stylus
-	call($function-name, $arg1, $arg2)
+	call($function_name, $arg1, $arg2)
 ```
 This opens up a whole (new) world
 ```stylus
