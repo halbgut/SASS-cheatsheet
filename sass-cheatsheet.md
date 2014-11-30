@@ -25,6 +25,7 @@
 Note: Same goes for lists
 This is awful but:
 *Planned - /issues/216 - 13 Aug 14*
+*/u/myabc made a PQ; rejected by /u/nex3 (/pull/1504)*
 
 ### Shorthand properties #UNDOCUMENTED
 	font:
@@ -90,3 +91,4 @@ Returns something like "uanlk2zlx"
 ### Colors, Numbers
 I'm bad with colors and numbers soo I'm leaving this out.
 
+### Se
