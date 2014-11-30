@@ -1,31 +1,31 @@
 # SASS Cheatsheet
 ## Syntax
 ### Declarations
-```sass
+```stylus
 	border: 1px solid tomato
 ```
 
 ### Imports
-```sass
+```stylus
 	@import components/code
 ```
 ### Mixins
 #### Defining Mixins
-```sass
+```stylus
 	=bounce ($param1, $param2)
 		<Your mixin here>
 ```
 #### Calling Mixins
-```sass
+```stylus
 	+bounce (yolo, swag)
 ```
 ### Defining Maps and Lists
-```sass
+```stylus
 	$var-map: ( fresh: killazz, hashtag: mofo )
 	$var-list: yolo, zolo, molo, tolo
 ```
 **Invalid:**
-```sass
+```stylus
 	$var-map: (
 		guess: 23,
 		answer: 42
@@ -37,51 +37,51 @@ This is awful but:
 */u/myabc made a PQ; rejected by /u/nex3 (/pull/1504)*
 
 ### Shorthand properties #UNDOCUMENTED
-```sass
+```stylus
 	font:
 		family: "Comic Sans", Arial
 		size: 2em
 ```
 ## Mixins (SASS & SCSS)
 ### List (all work with maps too)
-```sass
+```stylus
 	length($var-list)
 	nth($var-list, 3)
 ```
 
-```sass
+```stylus
 	$var-map: join($var-list, $another-list)
 ```
 Turns maps to a two dimentional list.
-```sass
+```stylus
 	index($var-list, molo)
 	$var-map: append($var-list, kolo)
 	$zipped-list: zip($list1, $list2)
 ```
 ### Maps
-```sass
+```stylus
 	$var-map: map-get($var-map, killaz)
 	$var-map: map-merge($var-map, (AAaaa: Oooo))
 	$var-map: map-remove($var-map, fresh)
 ```
-```sass
+```stylus
 	map-keys($var-map)
 ```
 Returns a list of keys
-```sass
+```stylus
 	map-values($var-map)
 ```
 Returns a list of values
-```sass
+```stylus
 	map-has-key($var-map, hashtag)
 ```
 ### Debugging
-```sass
+```stylus
 	inspect()
 ```
 
 ### Strings
-```sass
+```stylus
 	quote($string)
 	unquote($string)
 	str-length($string)
@@ -93,25 +93,25 @@ Returns a list of values
 ```
 
 ### Meta Stuff
-```sass
+```stylus
 	feature-exists($feature)
 ```
 This is only for plugins
-```sass
+```stylus
 	[[global-]variable|function|mixin]-exists($thing)
 	type-of($var-list)
 	unit(1rem)
 	unitless(3)
 ```
-```sass
+```stylus
 	comparable(1px, 1px)
 ```
 Checks if two values have the same unit
-```sass
+```stylus
 	call($function-name, $arg1, $arg2)
 ```
 This opens up a whole (new) world
-```sass
+```stylus
 	unique-id()
 ```
 Returns something like "uanlk2zlx"
