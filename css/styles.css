@@ -95,4 +95,14 @@ h1 {
   font-size: 0.8em;
 }
 
+/* line 50, ../sass/styles.sass */
+p {
+  margin: 0 0 1rem 0;
+}
+
+/* line 53, ../sass/styles.sass */
+pre {
+  margin: 0.2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
