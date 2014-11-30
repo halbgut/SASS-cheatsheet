@@ -7,34 +7,30 @@ code {
 }
 
 /* line 7, ../sass/components/_code.sass */
+.at_rule,
 .keyword,
 .property {
   color: #93a1a1;
 }
 
-/* line 11, ../sass/components/_code.sass */
+/* line 12, ../sass/components/_code.sass */
 .variable {
   color: #cb4b16;
 }
 
-/* line 14, ../sass/components/_code.sass */
+/* line 15, ../sass/components/_code.sass */
 .number {
-  color: #6c71c4;
+  color: #268bd2;
 }
 
-/* line 17, ../sass/components/_code.sass */
+/* line 18, ../sass/components/_code.sass */
 .string {
   color: #b58900;
 }
 
-/* line 20, ../sass/components/_code.sass */
+/* line 21, ../sass/components/_code.sass */
 .tag {
   color: #002b36;
-}
-
-/* line 23, ../sass/components/_code.sass */
-.at_rule {
-  color: #268bd2;
 }
 
 /* line 7, ../sass/styles.sass */
