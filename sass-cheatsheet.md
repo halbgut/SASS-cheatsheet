@@ -12,12 +12,12 @@
 ### Mixins
 #### Defining Mixins
 ```stylus
-	=bounce ($param1, $param2)
+	=bounce($param1, $param2)
 		<Your mixin here>
 ```
 #### Calling Mixins
 ```stylus
-	+bounce (yolo, swag)
+	+bounce(yolo, swag)
 ```
 ### Defining Maps and Lists
 ```stylus
