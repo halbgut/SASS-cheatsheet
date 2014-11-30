@@ -6,30 +6,24 @@ code {
   font-size: 1.2em;
 }
 
-/* line 7, ../sass/components/_code.sass */
-.at_rule,
-.keyword,
-.property {
+/* line 8, ../sass/components/_code.sass */
+.hljs-function, .hljs-property {
   color: #93a1a1;
 }
-
 /* line 12, ../sass/components/_code.sass */
-.variable {
+.hljs-variable, .hljs-attribute {
   color: #cb4b16;
 }
-
-/* line 15, ../sass/components/_code.sass */
-.number {
+/* line 16, ../sass/components/_code.sass */
+.hljs-number {
   color: #268bd2;
 }
-
-/* line 18, ../sass/components/_code.sass */
-.string {
+/* line 19, ../sass/components/_code.sass */
+.hljs-string {
   color: #b58900;
 }
-
-/* line 21, ../sass/components/_code.sass */
-.tag {
+/* line 22, ../sass/components/_code.sass */
+.hljs-tag {
   color: #002b36;
 }
 

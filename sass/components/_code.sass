@@ -4,19 +4,20 @@ code
 	display: block
 	font-size: 1.2em
 
-.at_rule,
-.keyword,
-.property
-	color: _c(base1)
+.hljs-
+	&function,
+	&property
+		color: _c(base1)
 
-.variable
-	color: _c(orange)
+	&variable,
+	&attribute
+		color: _c(orange)
 
-.number
-	color: _c(blue)
+	&number
+		color: _c(blue)
 
-.string
-	color: _c(yellow)
+	&string
+		color: _c(yellow)
 
-.tag
-	color: _c(base03)
+	&tag
+		color: _c(base03)
